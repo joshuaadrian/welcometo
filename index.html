@@ -3,21 +3,17 @@ title: Welcome To
 layout: default
 ---
 
-<div class="score-sheet-wrapper">
+<div id="score-sheet-wrapper">
 
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
+	<div class="score-sheet">
 
-				<div class="score-sheet">
-
-						<img src="/assets/images/score-sheet.jpg" alt="Welcome To">
-
-				</div>
-
+			<div class="score-sheet-controls">
+        <input type="button" value="clear" id="clr" size="23">
 			</div>
 
-		</div>
+			<img src="/assets/images/score-sheet.jpg" alt="Welcome To" id="score-sheet-image">
+
+			<canvas id="score-sheet-form"></canvas>
 
 	</div>
 

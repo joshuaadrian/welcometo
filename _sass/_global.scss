@@ -25,6 +25,13 @@ body {
   top: 0;
   font-size: 100%;
   font-weight:$font-weight-light;
+
+}
+
+body {
+  padding: 30px;
+  background: -webkit-radial-gradient(center, ellipse cover, #D4FFEA 0%,#7FFFC4 100%);
+  position: relative;
 }
 
 * {
