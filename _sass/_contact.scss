@@ -1,0 +1,103 @@
+
+
+.contact {
+	padding:260px 0 0;
+	background:url('images/contact.svg') center top / 200px auto no-repeat transparent;
+
+	@media only screen and (min-width: $breakpoint-med) {
+		background-position:right center;
+		padding:0 260px 0 0;
+	}
+}
+
+.contact-wrapper {
+
+	padding:60px 0 110px;
+	background:#ffd97f;
+	background: -webkit-radial-gradient(center, ellipse cover, #f8e6ba 0%,#ffd97f 100%);
+
+	h2 {
+		font-weight:900;
+		color:#000;
+		font-size:32px;
+		margin:0 0 20px;
+		line-height:1.4;
+
+		@media only screen and (min-width: $breakpoint-small) {
+			font-size:48px;
+		}
+	}
+
+	p {
+		color:#000;
+		font-size:20px;
+		margin:0;
+
+		@media only screen and (min-width: $breakpoint-small) {
+			font-size:24px;
+		}
+	}
+
+	p.info {
+		margin:50px 0 0;
+	}
+
+	small {
+		font-size:14px;
+	}
+
+	.svg-wrapper {
+		position: relative;
+		margin: 30px auto 0;
+		width: 320px;
+		display:inline-block;
+		height:60px;
+		overflow:hidden;
+		background:rgba(255,255,255,0.25);
+		transition:background 1s ease-in-out;
+
+		&:hover {
+
+			background:rgba(255,255,255,0.5);
+
+			.shape {
+				stroke-width: 5px;
+				stroke-dashoffset: 0;
+				stroke-dasharray: 760;
+			}
+
+		}
+	}
+
+	.shape {
+		stroke-dasharray: 140 540;
+		stroke-dashoffset: -474;
+		stroke-width: 0px;
+		fill: transparent;
+		stroke: darken(#ffd97f,15%);
+		transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+	}
+
+	.text {
+		font-size: 18px;
+		line-height: 32px;
+		letter-spacing: 3px;
+		color: #fff;
+		top: -52px;
+		font-weight:700;
+		position: relative;
+		text-decoration:none;
+		color:rgba(0,0,0,0.75);
+		text-transform:uppercase;
+		text-align:center;
+
+	}
+
+	a {
+		display:block;
+		height:60px;
+		width:100%;
+		text-decoration:none;
+	}
+
+}
