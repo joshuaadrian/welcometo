@@ -26,5 +26,6 @@ defaults:
     image: true
 sass:
   style: compressed
+  sass_dir: _sass
 permalink: pretty
 repository: joshuaadrian/welcometo
